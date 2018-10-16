@@ -1,0 +1,42 @@
+[{
+	"id": "22f4e59.242a31a",
+	"type": "tcp in",
+	"z": "47d19b8d.4e15a4",
+	"name": "Prueba 8080",
+	"server": "server",
+	"host": "localhost",
+	"port": "8080",
+	"datamode": "stream",
+	"datatype": "utf8",
+	"newline": "",
+	"topic": "prueba",
+	"base64": false,
+	"x": 210,
+	"y": 140,
+	"wires": [
+		["2ab494cd.e41afc", "51b84d01.f9bdb4", "cedf737b.d475e", "32092988.061c36"]
+	]
+}]
+[{
+	"id": "32092988.061c36",
+	"type": "mongodb out",
+	"z": "47d19b8d.4e15a4",
+	"mongodb": "aa9946f9.23a388",
+	"name": "",
+	"collection": "YourCollection",
+	"payonly": false,
+	"upsert": false,
+	"multi": false,
+	"operation": "insert",
+	"x": 620,
+	"y": 300,
+	"wires": []
+}, {
+	"id": "aa9946f9.23a388",
+	"type": "mongodb",
+	"z": "",
+	"hostname": "localhost",
+	"port": "27017",
+	"db": "DBName",
+	"name": ""
+}]
